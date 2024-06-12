@@ -1,4 +1,6 @@
 import json
+import os
+
 import numpy as np
 from scipy.signal import sawtooth, square
 import matplotlib.pyplot as plt
@@ -104,8 +106,8 @@ def pv_low(amplitude=2.0, frequency=1.0 / 60.0, duration=60, sampling_rate=1000)
 
 
 def process_value(amplitude=15.0, duration_fill=45.0, duration_steady=360.0, duration_empty=45.0, sampling_rate=1000,
-               high_threshold=17.0, low_threshold=13.0, high_high_threshold=19.0, low_low_threshold=11.0,
-               high_range=20.0, low_range=0.0, animation=True):
+                  high_threshold=17.0, low_threshold=13.0, high_high_threshold=19.0, low_low_threshold=11.0,
+                  high_range=20.0, low_range=0.0, animation=True):
     """
 
     :param animation: whether animation is desired
@@ -197,9 +199,7 @@ def process_value(amplitude=15.0, duration_fill=45.0, duration_steady=360.0, dur
     plt.show()
 
 
-
 def compute_signals(filepath=None, plot_signals=True):
-
     """
     Procedurally generates simulated signals as specified in LIT_30_01_config.json, and optionally plots them.
     Returns a list of dicts of each signal, containing the total time and waveform for each signal.
@@ -387,7 +387,7 @@ def compute_pv(filepath=None):
         elif "steady" in segment_name:
             wave = offset + amplitude * np.ones_like(t) + noise * np.random.randn(len(t))
         elif "sine" in segment_name:
-            frequency = 2*1/60   # 2 cycles per minute
+            frequency = 2 * 1 / 60  # 2 cycles per minute
             wave = offset + amplitude * np.sin(2 * np.pi * frequency * t) + noise * np.random.randn(len(t))
         else:
             wave = offset + amplitude * np.ones_like(t) + noise * np.random.randn(len(t))
@@ -401,3 +401,58 @@ def compute_pv(filepath=None):
     waveform = np.concatenate(waveform_segments)
 
     return name, description, unit, zip(t_total, waveform)
+
+
+def compute_pv_dict(filepath=None):
+    # init data result
+    data = {}
+
+    # Load configuration from JSON file
+    with open(filepath, 'r') as f:
+        print(f"Opening json file: '{filepath}'")
+        config = json.load(f)
+
+    # Extract signal name, description, and unit
+    data.update({'name': config['name']})
+    data.update({'description': config['description']})
+    data.update({'unit': config['unit']})
+
+    # Extract segment parameters from JSON
+    segments = config['segments']
+
+    # Initialize lists to store time arrays and waveform segments
+    time_arrays = []
+    waveform_segments = []
+    total_duration = 0
+
+    # Generate time arrays and waveform segments dynamically
+    for segment_name, params in segments.items():
+        duration = params['duration']
+        sampling_rate = params['sampling_rate']
+        offset = params['offset']
+        amplitude = params['amplitude']
+        noise = params['noise']
+
+        t = np.linspace(total_duration, total_duration + duration, int(sampling_rate * duration), endpoint=False)
+
+        if "ramp" in segment_name:
+            wave = offset + amplitude * (t - total_duration) / duration + noise * np.random.randn(len(t))
+        elif "steady" in segment_name:
+            wave = offset + amplitude * np.ones_like(t) + noise * np.random.randn(len(t))
+        elif "sine" in segment_name:
+            frequency = 2 * 1 / 60  # 2 cycles per minute
+            wave = offset + amplitude * np.sin(2 * np.pi * frequency * t) + noise * np.random.randn(len(t))
+        else:
+            wave = offset + amplitude * np.ones_like(t) + noise * np.random.randn(len(t))
+
+        total_duration += duration
+        time_arrays.append(t)
+        waveform_segments.append(wave)
+
+    # Concatenate the segments to form the complete time array and waveform
+    t_total = np.concatenate(time_arrays)
+    data.update({'idx': t_total})
+    waveform = np.concatenate(waveform_segments)
+    data.update({'waveform': waveform})
+
+    return data

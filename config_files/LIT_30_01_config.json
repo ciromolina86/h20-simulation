@@ -11,7 +11,7 @@
       "noise": 0.2
     },
     "2_steady": {
-      "duration": 60,
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 15,
@@ -25,7 +25,7 @@
       "noise": 0.2
     },
     "4_steady_state": {
-      "duration": 10,
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 21,
@@ -39,13 +39,13 @@
       "noise": 0.2
     },
     "6_steady_state": {
-      "duration": 10,
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 26,
       "noise": 0.2
     },
-    "7_ramp_down": {
+    "7_steady_state": {
       "duration": 30,
       "sampling_rate": 1,
       "offset": 26,
@@ -53,7 +53,7 @@
       "noise": 0.2
     },
     "8_steady_state": {
-      "duration": 60,
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 14,
@@ -88,7 +88,28 @@
       "noise": 0.2
     },
     "13_sine": {
-      "duration": 60,
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "14_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "15_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "16_sine": {
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 15,
       "amplitude": 1,

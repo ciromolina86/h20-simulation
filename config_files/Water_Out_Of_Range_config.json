@@ -4,21 +4,112 @@
   "unit": "Digital",
   "segments": {
     "1_steady": {
-      "duration": 390,
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 0,
       "noise": 0
     },
-    "2_steady": {
+        "2_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "3_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "4_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "5_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "6_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "7_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "8_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "9_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "10_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "11_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "12_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+        "13_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "14_steady": {
       "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 1,
       "noise": 0
     },
-    "3_steady": {
-      "duration": 60,
+    "15_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "16_steady": {
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 0,
