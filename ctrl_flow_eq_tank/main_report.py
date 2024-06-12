@@ -91,7 +91,7 @@ if __name__ == '__main__':
             'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZCO_30_07', 'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZCO_30_08',
             'AOI_Control_Loop_Flow_Eq_Feed_Tank.Sts_Auto',
             'AOI_Control_Loop_Flow_Eq_Feed_Tank.Water_Off_Range_SCADA_Reset',
-            'AOI_Control_Loop_Flow_Eq_Feed_Tank.ATS_1_Utilty_Power']
+            'AOI_Control_Loop_Flow_Eq_Feed_Tank.ATS_1_Utility_Power']
     field_names = ['ts'] + tags
     # print(field_names)
 
