@@ -11,14 +11,14 @@
       "noise": 0
     },
     "2_steady": {
-      "duration": 30,
+      "duration": 10,
       "sampling_rate": 1,
       "offset": 0,
-      "amplitude": 10,
+      "amplitude": 0,
       "noise": 0
     },
     "3_steady": {
-      "duration": 60,
+      "duration": 10,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 1,
