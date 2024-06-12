@@ -84,12 +84,14 @@ if __name__ == '__main__':
     clx = comm_handler.CLX_Manager()
     print(clx.get_plc_info())
 
-    csv_file_name = f'report-{}.csv'
+    csv_file_name = f"report-{time.strftime('%Y-%m-%d-%H-%M')}.csv"
     tags = ['AOI_Control_Loop_Flow_Eq_Feed_Tank.LIT_30_01', 'AOI_Control_Loop_Flow_Eq_Feed_Tank.SP_Level_Flow_Eq_Tank',
             'AOI_Control_Loop_Flow_Eq_Feed_Tank.Water_Off_Range', 'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZC_30_03',
             'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZCC_30_07', 'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZCC_30_08',
             'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZCO_30_07', 'AOI_Control_Loop_Flow_Eq_Feed_Tank.ZCO_30_08',
-            'AOI_Control_Loop_Flow_Eq_Feed_Tank.FCV_30_03_SCADA_Auto']
+            'AOI_Control_Loop_Flow_Eq_Feed_Tank.FCV_30_03_SCADA_Auto',
+            'AOI_Control_Loop_Flow_Eq_Feed_Tank.Water_Off_Range_SCADA_Reset',
+            'AOI_Control_Loop_Flow_Eq_Feed_Tank.ATS_1_Utilty_Power']
     field_names = ['ts'] + tags
     # print(field_names)
 

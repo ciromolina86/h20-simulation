@@ -67,7 +67,7 @@
       "noise": 0.2
     },
     "10_steady_state": {
-      "duration": 10,
+      "duration": 30,
       "sampling_rate": 1,
       "offset": 0,
       "amplitude": 9,
