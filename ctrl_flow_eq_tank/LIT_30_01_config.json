@@ -1,0 +1,98 @@
+{
+  "name": "LIT_30_01_AI_IN",
+  "description": "Flow EQ Tank Level",
+  "unit": "ft",
+  "segments": {
+    "1_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 15,
+      "noise": 0.2
+    },
+    "2_steady": {
+      "duration": 60,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 15,
+      "noise": 0.2
+    },
+    "3_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 6,
+      "noise": 0.2
+    },
+    "4_steady_state": {
+      "duration": 10,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 21,
+      "noise": 0.2
+    },
+    "5_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 21,
+      "amplitude": 5,
+      "noise": 0.2
+    },
+    "6_steady_state": {
+      "duration": 10,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 26,
+      "noise": 0.2
+    },
+    "7_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 26,
+      "amplitude": -12,
+      "noise": 0.2
+    },
+    "8_steady_state": {
+      "duration": 60,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 14,
+      "noise": 0.2
+    },
+    "9_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 14,
+      "amplitude": -5,
+      "noise": 0.2
+    },
+    "10_steady_state": {
+      "duration": 10,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 9,
+      "noise": 0.2
+    },
+    "11_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 9,
+      "amplitude": 7,
+      "noise": 0.2
+    },
+    "12_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 16,
+      "noise": 0.2
+    },
+    "13_sine": {
+      "duration": 60,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    }
+  }
+}
