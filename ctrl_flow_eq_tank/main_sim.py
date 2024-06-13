@@ -16,13 +16,11 @@ def main():
     clx = comm_handler.CLX_Manager()
     print(clx.get_plc_info())
 
-    # print(os.path.split(os.getcwd()))
-
     # Relative path to the JSON file
-    file_path_1 = os.path.join(os.path.split(os.getcwd())[0], 'config_files\LIT_30_01_config.json')
-    file_path_2 = os.path.join(os.path.split(os.getcwd())[0], 'config_files\Water_Out_Of_Range_config.json')
-    file_path_3 = os.path.join(os.path.split(os.getcwd())[0], 'config_files\ATS_1_Utilty_Power_config.json')
-    #
+    file_path_1 = os.path.join(os.path.split(os.getcwd())[0], 'config_files', 'LIT_30_01_config.json')
+    file_path_2 = os.path.join(os.path.split(os.getcwd())[0], 'config_files', 'Water_Out_Of_Range_config.json')
+    file_path_3 = os.path.join(os.path.split(os.getcwd())[0], 'config_files', 'ATS_1_Utilty_Power_config.json')
+
     # Compute Process Variable to be simulated
     data_1 = signal_handler.compute_pv_dict(file_path_1)
     data_2 = signal_handler.compute_pv_dict(file_path_2)
@@ -39,10 +37,10 @@ def main():
     # Write Process Variable to PLC every 1 second
     rows, cols = merged_df.shape
     while True:
+        print(f"{list(merged_df.columns[1:])}")
+
         for i in range(rows):
-            # print(f"{datetime.datetime.now()}\t|\tsecond={merged_df.iloc[i]}\t|\tvalues={merged_df.iloc[i]}")
-            # print(f"{list(merged_df.columns[1:])}")
-            print(f"{list(merged_df.iloc[i,1:])}")
+            print(f"{list(merged_df.iloc[i, 1:])}")
             write_pv_tags(clx, list(merged_df.columns[1:]), list(merged_df.iloc[i, 1:]))
             time.sleep(1)
 
