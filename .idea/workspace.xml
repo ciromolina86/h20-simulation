@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="adding new signals and folder structure">
-      <change afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/report-2024-06-12-12-21.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/report-2024-06-12-12-34.csv" afterDir="false" />
+    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="write multiple tags implemented and json updated to sync">
+      <change afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/report-2024-06-13-09-16.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_files/ATS_1_Utilty_Power_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_files/ATS_1_Utilty_Power_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_files/LIT_30_01_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_files/LIT_30_01_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_files/Sts_Auto_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_files/Water_Off_Range_SCADA_Reset_config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config_files/Water_Out_Of_Range_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_files/Water_Out_Of_Range_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_auto.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_reset.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +57,7 @@
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main_sim">
+  <component name="RunManager" selected="Python.main_report">
     <configuration name="main_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -93,7 +100,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sim_oor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="signal_handler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -101,11 +108,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_flow_eq_tank" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/handlers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_oor.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/handlers/signal_handler.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sim_reset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="sim_pv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,7 +133,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_reset.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_pv.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,9 +167,9 @@
       <list>
         <item itemvalue="Python.main_report" />
         <item itemvalue="Python.main_sim" />
+        <item itemvalue="Python.sim_pv" />
+        <item itemvalue="Python.signal_handler" />
         <item itemvalue="Python.sim_util_power" />
-        <item itemvalue="Python.sim_reset" />
-        <item itemvalue="Python.sim_oor" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +210,21 @@
       <option name="project" value="LOCAL" />
       <updated>1718208819561</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="working on main sim">
+      <created>1718212173234</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718212173234</updated>
+    </task>
+    <task id="LOCAL-00006" summary="write multiple tags implemented and json updated to sync">
+      <created>1718226478227</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718226478227</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +243,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="adding new signals" />
     <MESSAGE value="adding new signals and folder structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding new signals and folder structure" />
+    <MESSAGE value="working on main sim" />
+    <MESSAGE value="write multiple tags implemented and json updated to sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="write multiple tags implemented and json updated to sync" />
   </component>
 </project>

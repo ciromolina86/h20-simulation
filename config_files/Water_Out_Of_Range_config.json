@@ -114,6 +114,13 @@
       "offset": 0,
       "amplitude": 0,
       "noise": 0
+    },
+    "17_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
     }
   }
 }

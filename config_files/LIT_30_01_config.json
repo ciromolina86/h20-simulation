@@ -45,7 +45,7 @@
       "amplitude": 26,
       "noise": 0.2
     },
-    "7_steady_state": {
+    "7_ramp_down": {
       "duration": 30,
       "sampling_rate": 1,
       "offset": 26,
@@ -109,6 +109,13 @@
       "noise": 0.2
     },
     "16_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "17_sine": {
       "duration": 30,
       "sampling_rate": 1,
       "offset": 15,

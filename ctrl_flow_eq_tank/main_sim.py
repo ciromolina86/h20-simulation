@@ -41,8 +41,8 @@ def main():
     while True:
         for i in range(rows):
             # print(f"{datetime.datetime.now()}\t|\tsecond={merged_df.iloc[i]}\t|\tvalues={merged_df.iloc[i]}")
-            # print(f"{list(merged_df.columns[1:])}")
-            print(f"{list(merged_df.iloc[i,1:])}")
+            print(f"{list(merged_df.columns[:])}")
+            print(f"{list(merged_df.iloc[i,:])}")
             write_pv_tags(clx, list(merged_df.columns[1:]), list(merged_df.iloc[i, 1:]))
             time.sleep(1)
 
