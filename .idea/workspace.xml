@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="write multiple tags implemented and json updated to sync">
-      <change afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/report-2024-06-13-09-16.csv" afterDir="false" />
+    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="update main_sim.py">
+      <change afterPath="$PROJECT_DIR$/config_files/FIT_30_04_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config_files/LIT_30_01_config2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_sim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-2024-06-13-09-16.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/sim_oor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/sim_pv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/sim_util_power.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/ATS_1_Utilty_Power_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_files/ATS_1_Utilty_Power_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/LIT_30_01_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_files/LIT_30_01_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/Sts_Auto_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/Water_Off_Range_SCADA_Reset_config.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/Water_Out_Of_Range_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config_files/Water_Out_Of_Range_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_auto.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_reset.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,26 +43,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/cmolina/PycharmProjects/h20-simulation/config_files"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cmolina/PycharmProjects/h20-simulation/config_files&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
+      <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_flow_eq_tank" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main_report">
-    <configuration name="main_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.main_sim (1)">
+    <configuration name="main_sim (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,11 +72,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_flow_eq_tank" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/main_report.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_sim.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main_report" />
+        <item itemvalue="Python.main_sim (1)" />
         <item itemvalue="Python.main_sim" />
+        <item itemvalue="Python.sim_util_power" />
         <item itemvalue="Python.sim_pv" />
         <item itemvalue="Python.signal_handler" />
-        <item itemvalue="Python.sim_util_power" />
       </list>
     </recent_temporary>
   </component>
@@ -210,21 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718208819561</updated>
     </task>
-    <task id="LOCAL-00005" summary="working on main sim">
-      <created>1718212173234</created>
+    <task id="LOCAL-00005" summary="update main_sim.py">
+      <created>1718288678279</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1718212173234</updated>
+      <updated>1718288678279</updated>
     </task>
-    <task id="LOCAL-00006" summary="write multiple tags implemented and json updated to sync">
-      <created>1718226478227</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1718226478227</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +231,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="h20-simulation/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -243,8 +254,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="adding new signals" />
     <MESSAGE value="adding new signals and folder structure" />
-    <MESSAGE value="working on main sim" />
-    <MESSAGE value="write multiple tags implemented and json updated to sync" />
-    <option name="LAST_COMMIT_MESSAGE" value="write multiple tags implemented and json updated to sync" />
+    <MESSAGE value="time axis updated to have another steady state between out of range and utility power failure" />
+    <MESSAGE value="update main_sim.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update main_sim.py" />
   </component>
 </project>

@@ -1,0 +1,119 @@
+{
+  "name": "AOI_C_Loop_Cascade_Aerator_Recycle_Pump.FIT_30_04",
+  "description": "Cascade Aerator Recycle Pump Flow",
+  "unit": "gpm",
+  "segments": {
+    "1_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 200,
+      "noise": 0.2
+    },
+    "2_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 200,
+      "noise": 0.2
+    },
+    "3_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "4_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "5_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "6_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "7_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "8_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "9_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "10_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "11_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "12_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "13_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "14_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "15_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    },
+    "16_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 200,
+      "amplitude": 20,
+      "noise": 0.2
+    }
+  }
+}

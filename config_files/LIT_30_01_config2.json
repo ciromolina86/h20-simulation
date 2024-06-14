@@ -1,0 +1,119 @@
+{
+  "name": "LIT_30_01_AI_IN",
+  "description": "Flow EQ Tank Level",
+  "unit": "ft",
+  "segments": {
+    "1_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "2_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "3_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "4_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "5_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "6_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "7_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "8_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "9_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": -12,
+      "noise": 0.2
+    },
+    "10_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 3,
+      "noise": 0.2
+    },
+    "11_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 3,
+      "amplitude": 12,
+      "noise": 0.2
+    },
+    "12_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "13_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "14_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "15_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "16_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    }
+  }
+}
