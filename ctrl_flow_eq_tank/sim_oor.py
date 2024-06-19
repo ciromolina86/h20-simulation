@@ -14,7 +14,7 @@ def main():
     print(clx.get_plc_info())
 
     # Relative path to the JSON file
-    file_path_1 = os.path.join(os.path.dirname(__file__), '../config_files/Water_Out_Of_Range_config.json')
+    file_path_1 = os.path.join(os.path.dirname(__file__), 'config_files/Water_Out_Of_Range_config.json')
 
     # Compute Process Variable to be simulated
     name_1, desc_1, unit_1, waveform_1 = signal_handler.compute_pv(file_path_1)

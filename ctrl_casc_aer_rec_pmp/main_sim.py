@@ -18,9 +18,9 @@ def main():
     print(clx.get_plc_info())
 
     # Relative path to the JSON file
-    file_path_1 = os.path.join(os.path.split(os.getcwd())[0], 'config_files', 'FIT_30_04_config.json')
-    file_path_2 = os.path.join(os.path.split(os.getcwd())[0], 'config_files', 'LIT_30_01_config2.json')
-    # file_path_3 = os.path.join(os.path.split(os.getcwd())[0], 'config_files', 'ATS_1_Utilty_Power_config.json')
+    file_path_1 = os.path.join('config_files', 'FIT_30_04_config.json')
+    file_path_2 = os.path.join('config_files', 'LIT_30_01_config.json')
+    # file_path_3 = os.path.join('config_files', 'Power_Failure_config.json')
 
     # Compute Process Variable to be simulated
     data_1 = signal_handler.compute_pv_dict(file_path_1)
@@ -35,7 +35,8 @@ def main():
     merged_df = pd.merge(merged_df, df2, on='idx')
     # merged_df = pd.merge(merged_df, df3, on='idx')
     print(merged_df.shape)
-    merged_df.plot()  # ['AOI_C_Loop_Cascade_Aerator_Recycle_Pump.FIT_30_04','LIT_30_01_AI_IN']
+    merged_df[['AOI_C_Loop_Cascade_Aerator_Recycle_Pump.FIT_30_04',
+               'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.LIT_30_01']].plot()
     plt.show()
 
     # Write Process Variable to PLC every 1 second

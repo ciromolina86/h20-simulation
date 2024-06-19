@@ -1,5 +1,5 @@
 {
-  "name": "LIT_30_01_AI_IN",
+  "name": "AOI_C_Loop_Cascade_Aerator_Recycle_Pump.LIT_30_01",
   "description": "Flow EQ Tank Level",
   "unit": "ft",
   "segments": {
@@ -31,25 +31,25 @@
       "amplitude": 1,
       "noise": 0.2
     },
-    "5_sine": {
+    "5_ramp_down": {
       "duration": 30,
       "sampling_rate": 1,
       "offset": 15,
-      "amplitude": 1,
+      "amplitude": -12,
       "noise": 0.2
     },
-    "6_sine": {
+    "6_steady_state": {
       "duration": 30,
       "sampling_rate": 1,
-      "offset": 15,
-      "amplitude": 1,
+      "offset": 0,
+      "amplitude": 3,
       "noise": 0.2
     },
-    "7_sine": {
+    "7_ramp_up": {
       "duration": 30,
       "sampling_rate": 1,
-      "offset": 15,
-      "amplitude": 1,
+      "offset": 3,
+      "amplitude": 12,
       "noise": 0.2
     },
     "8_sine": {
@@ -59,25 +59,25 @@
       "amplitude": 1,
       "noise": 0.2
     },
-    "9_ramp_down": {
+    "9_sine": {
       "duration": 30,
       "sampling_rate": 1,
       "offset": 15,
-      "amplitude": -12,
+      "amplitude": 1,
       "noise": 0.2
     },
-    "10_steady_state": {
+    "10_sine": {
       "duration": 30,
       "sampling_rate": 1,
-      "offset": 0,
-      "amplitude": 3,
+      "offset": 15,
+      "amplitude": 1,
       "noise": 0.2
     },
-    "11_ramp_up": {
+    "11_sine": {
       "duration": 30,
       "sampling_rate": 1,
-      "offset": 3,
-      "amplitude": 12,
+      "offset": 15,
+      "amplitude": 1,
       "noise": 0.2
     },
     "12_sine": {

@@ -89,11 +89,13 @@ if __name__ == '__main__':
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.SP_Recycle_Pump_Stop_Level',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.FIT_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.LIT_30_01',
+            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.UCR_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.SC_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.PSH_30_04',
-            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.Power_Failure',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.UA_30_04',
-            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.YA_30_04']
+            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.YA_30_04',
+            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.Sts_Auto',
+            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.Power_Failure']
     field_names = ['ts'] + tags
     # print(field_names)
 
