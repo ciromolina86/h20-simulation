@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="new control loop simulation scripts for &quot;Cascade Aerator Recycle Pump Flow Control&quot; initial commit">
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-19-16-50.csv" afterDir="false" />
+    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="config files moved to new location and small changes">
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/Common_Fault_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/PSH_30_04_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/Power_Fault_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/TSH_30_04_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/VFD_Fault_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-24-14-21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-24-14-22.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/ATS_1_Utilty_Power_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/config_files/Power_Failure_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/FIT_30_04_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/FIT_30_04_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/LIT_30_01_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/config_files/LIT_30_01_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/LIT_30_01_config2.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/LIT_30_01_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_files/Water_Out_Of_Range_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/config_files/Water_Out_Of_Range_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/FIT_30_04_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/FIT_30_04_config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/LIT_30_01_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/LIT_30_01_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_report.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/sim_oor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/sim_pv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/sim_util_power.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_oor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_oor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_pv.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_pv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_util_power.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_util_power.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-19-16-50.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +47,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cmolina/PycharmProjects/h20-simulation/config_files&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/cmolina/PycharmProjects/h20-simulation/ctrl_casc_aer_rec_pmp/config_files"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_casc_aer_rec_pmp\config_files" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_flow_eq_tank" />
@@ -75,7 +72,7 @@
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main_sim (1)">
+  <component name="RunManager" selected="Python.main_report">
     <configuration name="main_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main_sim (1)" />
         <item itemvalue="Python.main_report" />
+        <item itemvalue="Python.main_sim (1)" />
         <item itemvalue="Python.main_sim" />
         <item itemvalue="Python.sim_util_power" />
         <item itemvalue="Python.sim_pv" />
@@ -249,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718395045661</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="config files moved to new location and small changes">
+      <created>1718831246046</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718831246046</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,6 +288,7 @@
     <MESSAGE value="update main_sim.py" />
     <MESSAGE value="update csv file name" />
     <MESSAGE value="new control loop simulation scripts for &quot;Cascade Aerator Recycle Pump Flow Control&quot; initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new control loop simulation scripts for &quot;Cascade Aerator Recycle Pump Flow Control&quot; initial commit" />
+    <MESSAGE value="config files moved to new location and small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="config files moved to new location and small changes" />
   </component>
 </project>

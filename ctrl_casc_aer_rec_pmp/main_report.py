@@ -80,7 +80,7 @@ def write_to_csv(file_name, field_names, data):
         writer.writerow(data)
 
 
-if __name__ == '__main__':
+def main():
     clx = comm_handler.CLX_Manager()
     print(clx.get_plc_info())
 
@@ -89,9 +89,11 @@ if __name__ == '__main__':
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.SP_Recycle_Pump_Stop_Level',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.FIT_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.LIT_30_01',
+            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.YS_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.UCR_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.SC_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.PSH_30_04',
+            'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.TSH_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.UA_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.YA_30_04',
             'AOI_C_Loop_Cascade_Aerator_Recycle_Pump.Sts_Auto',
@@ -117,3 +119,7 @@ if __name__ == '__main__':
 
         # Adjust the reading interval as needed
         time.sleep(1)
+
+
+if __name__ == '__main__':
+    main()

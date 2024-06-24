@@ -109,7 +109,7 @@
       "noise": 0.2
     },
     "16_sine": {
-      "duration": 30,
+      "duration": 150,
       "sampling_rate": 1,
       "offset": 15,
       "amplitude": 1,

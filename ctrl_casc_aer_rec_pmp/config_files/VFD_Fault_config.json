@@ -1,0 +1,147 @@
+{
+  "name": "AOI_C_Loop_Cascade_Aerator_Recycle_Pump.YA_30_04",
+  "description": "Common Failure",
+  "unit": "digital",
+  "segments": {
+    "1_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "2_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "3_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "4_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "5_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "6_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "7_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "8_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "9_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "10_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "11_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "12_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "13_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "14_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "15_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "16_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "17_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 1,
+      "noise": 0
+    },
+    "18_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "19_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    },
+    "20_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 0,
+      "noise": 0
+    }
+  }
+}
