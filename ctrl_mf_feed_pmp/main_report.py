@@ -81,7 +81,7 @@ def write_to_csv(file_name, field_names, data):
 
 
 def main():
-    clx = comm_handler.CLX_Manager()
+    clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
     print(clx.get_plc_info())
 
     csv_file_name = f"report-mf-feed-pmp-{time.strftime('%Y-%m-%d-%H-%M')}.csv"

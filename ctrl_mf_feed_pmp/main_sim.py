@@ -15,16 +15,11 @@ def write_pv_tags(plc, tags, values):
 
 def main():
     # Create PLC object and print PLC info
-    clx = comm_handler.CLX_Manager()
+    clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
     print(clx.get_plc_info())
 
-    config_files = ['FIT_30_04_config.json',
-                    'LIT_30_01_config.json',
-                    'PSH_30_04_config.json',
-                    'TSH_30_04_config.json',
-                    'Power_Fault_config.json',
-                    'Common_Fault_config.json',
-                    'VFD_Fault_config.json']
+    config_files = ['Feed_Tank_Level_config.json',
+                    'Inlet_Pressure_config.json']
 
     # init data with first tag values
     file_path = os.path.join('config_files', config_files[0])
@@ -73,8 +68,8 @@ def main():
     # merged_df = pd.merge(merged_df, df7, on='idx')
     # print dataset info
     print(merged_df.shape)
-    merged_df.plot()
-    plt.show()
+    # merged_df.plot()
+    # plt.show()
 
     # Write Process Variable to PLC every 1 second
     rows, cols = merged_df.shape

@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="config files moved to new location and small changes">
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/Common_Fault_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/PSH_30_04_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/Power_Fault_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/TSH_30_04_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/VFD_Fault_config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-24-14-21.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-24-14-22.csv" afterDir="false" />
+    <list default="true" id="82dafff8-5de2-4fb7-8d73-53f3c82859e8" name="Changes" comment="script to generate udt for trojan uv">
+      <change afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/config_files/Feed_Tank_Level_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/config_files/Inlet_Pressure_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/config_files/Power_Fault_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/report-mf-feed-pmp-2024-06-27-13-32.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/report-mf-feed-pmp-2024-06-27-13-43.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/FIT_30_04_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/FIT_30_04_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/LIT_30_01_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/config_files/LIT_30_01_config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/main_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-19-16-50.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-24-14-47.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_casc_aer_rec_pmp/report-casc-aer-rec-pmp-2024-06-24-14-47.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_mf_feed_pmp/main_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/main_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctrl_mf_feed_pmp/main_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctrl_mf_feed_pmp/main_sim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/signal_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/signal_handler.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +44,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/cmolina/PycharmProjects/h20-simulation/ctrl_casc_aer_rec_pmp/config_files"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/cmolina/PycharmProjects/itg-toolbox&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_mf_feed_pmp\config_files" />
+      <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_mf_feed_pmp" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_casc_aer_rec_pmp\config_files" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation" />
-      <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_flow_eq_tank" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\ctrl_flow_eq_tank\config_files" />
@@ -72,7 +70,28 @@
       <recent name="C:\Users\cmolina\PycharmProjects\h20-simulation\config_files" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main_report">
+  <component name="RunManager" selected="Python.siemens_db_gen">
+    <configuration name="main_report (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="h20-simulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_mf_feed_pmp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_mf_feed_pmp/main_report.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main_report" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -115,7 +134,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main_sim" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main_sim (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -123,11 +142,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_flow_eq_tank" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_mf_feed_pmp" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/main_sim.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_mf_feed_pmp/main_sim.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sim_pv" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="siemens_db_gen" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="h20-simulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,32 +163,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_flow_eq_tank" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/trojan_integration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_pv.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sim_util_power" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="h20-simulation" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ctrl_flow_eq_tank" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ctrl_flow_eq_tank/sim_util_power.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trojan_integration/siemens_db_gen.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -180,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.siemens_db_gen" />
+        <item itemvalue="Python.main_report (1)" />
+        <item itemvalue="Python.main_sim (2)" />
         <item itemvalue="Python.main_report" />
         <item itemvalue="Python.main_sim (1)" />
-        <item itemvalue="Python.main_sim" />
-        <item itemvalue="Python.sim_util_power" />
-        <item itemvalue="Python.sim_pv" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +251,28 @@
       <option name="project" value="LOCAL" />
       <updated>1718831246046</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="config new simulated signals for ctrl_casc_aer_rec_pmp">
+      <created>1719255395697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719255395697</updated>
+    </task>
+    <task id="LOCAL-00010" summary="setting up a new control loop simulator for MF Feed Pumps">
+      <created>1719340457205</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719340457205</updated>
+    </task>
+    <task id="LOCAL-00011" summary="script to generate udt for trojan uv">
+      <created>1720731704833</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1720731704833</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -289,6 +308,9 @@
     <MESSAGE value="update csv file name" />
     <MESSAGE value="new control loop simulation scripts for &quot;Cascade Aerator Recycle Pump Flow Control&quot; initial commit" />
     <MESSAGE value="config files moved to new location and small changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="config files moved to new location and small changes" />
+    <MESSAGE value="config new simulated signals for ctrl_casc_aer_rec_pmp" />
+    <MESSAGE value="setting up a new control loop simulator for MF Feed Pumps" />
+    <MESSAGE value="script to generate udt for trojan uv" />
+    <option name="LAST_COMMIT_MESSAGE" value="script to generate udt for trojan uv" />
   </component>
 </project>

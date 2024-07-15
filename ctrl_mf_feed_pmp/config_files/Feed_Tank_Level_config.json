@@ -1,0 +1,147 @@
+{
+  "name": "Ctrl_MF_Feed_Pumps.PI_Feed_Tank_Level",
+  "description": "Feed Tank Level",
+  "unit": "ft",
+  "segments": {
+    "1_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "2_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "3_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "4_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "5_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "6_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "7_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "8_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "9_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "10_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": -12,
+      "noise": 0.2
+    },
+    "11_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 3,
+      "amplitude": 12,
+      "noise": 0.2
+    },
+    "12_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "13_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "14_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "15_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "16_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "17_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "18_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "19_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "20_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 1,
+      "noise": 0.2
+    }
+  }
+}

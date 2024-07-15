@@ -440,7 +440,7 @@ def compute_pv_dict(filepath=None):
         elif "steady" in segment_name:
             wave = offset + amplitude * np.ones_like(t) + noise * np.random.randn(len(t))
         elif "sine" in segment_name:
-            frequency = 2 * 1 / 60  # 2 cycles per minute
+            frequency = 1 / 60  # 1 cycles per minute
             wave = offset + amplitude * np.sin(2 * np.pi * frequency * t) + noise * np.random.randn(len(t))
         else:
             wave = offset + amplitude * np.ones_like(t) + noise * np.random.randn(len(t))
