@@ -315,8 +315,7 @@ class CLX_Manager:
             result = plc.read(tag_name)
             # print(result)
             if result.error is None:
-                print(f'{datetime.datetime.now()}\t|\tReading successfully from \t{tag_name}: {result.value:.2f}')
-
+                # print(f'{datetime.datetime.now()}\t|\tReading successfully from \t{tag_name}: {result.value:.2f}')
                 return result.value
             else:
                 print(f'{datetime.datetime.now()}\t|\tError reading from \t{tag_name}: {result.error}')
@@ -358,7 +357,7 @@ class CLX_Manager:
             # print(result)
 
         if result.error is None:
-            print(f'{datetime.datetime.now()}\t|\tWriting successfully to \t{tag_name}: {result.value:.2f}')
+            # print(f'{datetime.datetime.now()}\t|\tWriting successfully to \t{tag_name}: {result.value:.2f}')
             return result.value
         else:
             print(f'{datetime.datetime.now()}\t|\tError writing to \t{tag_name}: {result.error}')
@@ -371,4 +370,13 @@ class CLX_Manager:
 
         with self._plc as plc:
             data = list(zip(tag_names, tag_values))
-            return plc.write(*data)
+            results = plc.write(*data)
+            # print(type(result),result)
+
+        for tag_name, result in zip(tag_names, results):
+            if result.error is None:
+                # print(f'{datetime.datetime.now()}\t|\tWriting successfully to \t{tag_name}: {result.value:.2f}')
+                return result.value
+            else:
+                print(f'{datetime.datetime.now()}\t|\tError writing to \t{tag_name}: {result.error}')
+                return None
