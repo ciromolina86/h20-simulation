@@ -307,6 +307,10 @@ class CLX_Manager:
         with self._plc as plc:
             return plc.get_tag_list()
 
+    def get_tag_list_json(self):
+        with self._plc as plc:
+            return plc.tags_json
+
     def read_single_tag(self, tag_name: str = 'testDINT'):
         # Reading a single tag returns a Tag object
         # e.g. Tag(tag='testDINT', value=20, type='DINT', error=None)
