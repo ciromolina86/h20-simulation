@@ -1,0 +1,147 @@
+{
+  "name": "Program:Ctrl_Sanitary_Lift_Station.PI_Lift_Station_Level",
+  "description": "Sanitary Lift Station Level",
+  "unit": "ft",
+  "segments": {
+    "1_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 5,
+      "noise": 0.2
+    },
+    "2_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 5,
+      "amplitude": 5,
+      "noise": 0.2
+    },
+    "3_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 5.5,
+      "noise": 0.2
+    },
+    "4_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 3,
+      "noise": 0.2
+    },
+    "5_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 18,
+      "noise": 0.2
+    },
+    "6_ramp_down":  {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 18,
+      "amplitude": -3,
+      "noise": 0.2
+    },
+    "7_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": -7,
+      "noise": 0.2
+    },
+    "8_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 8,
+      "amplitude": 2,
+      "noise": 0.2
+    },
+    "9_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "10_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 5,
+      "noise": 0.2
+    },
+    "11_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 15,
+      "amplitude": 5,
+      "noise": 0.2
+    },
+    "12_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 20,
+      "amplitude": -10,
+      "noise": 0.2
+    },
+    "13_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": -6,
+      "noise": 0.2
+    },
+    "14_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 4,
+      "amplitude": 12,
+      "noise": 0.2
+    },
+    "15_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 16,
+      "amplitude": -6,
+      "noise": 0.2
+    },
+    "16_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "17_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "18_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "19_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 1,
+      "noise": 0.2
+    },
+    "20_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 10,
+      "amplitude": 1,
+      "noise": 0.2
+    }
+  }
+}

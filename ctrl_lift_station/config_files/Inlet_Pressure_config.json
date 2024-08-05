@@ -1,0 +1,147 @@
+{
+  "name": "Program:Ctrl_Sanitary_Lift_Station.PI_Inlet_Pressure",
+  "description": "Inlet Pressure",
+  "unit": "psi",
+  "segments": {
+    "1_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 20,
+      "amplitude": 1,
+      "noise": 0.1
+    },
+    "2_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 20,
+      "amplitude": 1,
+      "noise": 0.1
+    },
+    "3_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 20,
+      "amplitude": 1,
+      "noise": 0.1
+    },
+    "4_ramp": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 20,
+      "amplitude": 20,
+      "noise": 0.1
+    },
+    "5_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 40,
+      "noise": 0.1
+    },
+    "6_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "7_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "8_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "9_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "10_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "11_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "12_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "13_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": -20,
+      "noise": 0.1
+    },
+    "14_steady": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 20,
+      "noise": 0.1
+    },
+    "15_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 20,
+      "amplitude": 20,
+      "noise": 0.1
+    },
+    "16_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "17_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "18_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "19_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    },
+    "20_sine": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 40,
+      "amplitude": 0.2,
+      "noise": 0.1
+    }
+  }
+}
