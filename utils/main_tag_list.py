@@ -12,28 +12,27 @@ def get_attributes(s):
     return s.data_type['attributes']
 
 
-def get_structs():
-    # Create PLC object and print PLC info
-    clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
-    print(clx.get_plc_info())
-    # _tags = json.loads(str(clx.get_tag_list_json()).replace("'", '"'))
+def get_tag_type(file_path, tag_type='struct'):
+    # Open tag list JSON file and load its contents into a dictionary
+    with open(file_path, 'r') as file:
+        _tags = json.load(file)
 
-    _tags = clx.get_tag_list_json()
     _tags_df = pd.DataFrame(_tags)
     _tags_df2 = _tags_df.transpose()
 
-    _atomic_tags = _tags_df2.where(_tags_df2['tag_type'] == 'atomic')
-    # _atomic_tags = _atomic_tags.dropna(how='all').to_excel('tags_atomic.xlsx')
+    if tag_type == 'atomic':
+        _atomic_tags = _tags_df2.where(_tags_df2['tag_type'] == 'atomic')
+        return _atomic_tags.dropna(how='all')  # .to_excel('tags_atomic.xlsx')
+    if tag_type == 'struct':
+        _struct_tags = _tags_df2.where(_tags_df2['tag_type'] == 'struct')
+        return _struct_tags.dropna(how='all')  # .to_excel('tags_struct.xlsx')
 
-    _struct_tags = _tags_df2.where(_tags_df2['tag_type'] == 'struct')
-    # _struct_tags = _struct_tags.dropna(how='all').to_excel('tags_struct.xlsx')
 
-    return _struct_tags
+def get_data_type(tags_df, data_type='P_AIn'):
+    if data_type == 'P_AIn':
+        tags_df_filtered = tags_df.where(tags_df['data_type_name'] == 'P_AIn')
 
-
-def get_p_ain(_struct_tags):
-    _p_ain_tags = _struct_tags.where(_struct_tags['data_type_name'] == 'P_AIn')
-    _p_ain_tags_short = _p_ain_tags[['tag_name', 'data_type_name', 'data_type']].dropna(how='all')
+    _p_ain_tags_short = tags_df_filtered[['tag_name', 'data_type_name', 'data_type']].dropna(how='all')
 
     new_df = pd.DataFrame(_p_ain_tags_short['tag_name'])
 
@@ -62,6 +61,18 @@ def get_tag_list():
 
 
 def main():
+    # Create PLC object and print PLC info
+    clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
+    print(clx.get_plc_info())
+
+    # read tag list from PLC
+    # tag_list_json = json.loads(str(clx.get_tag_list_json()).replace("'", '"'))
+    tag_list_data = json.dumps(clx.get_tag_list_json())
+
+    # Writing tag list in JSON format
+    with open(f"tag-list-{time.strftime('%Y-%m-%d-%H-%M')}.json", 'w') as file:
+        json.dump(tag_list_data, file)
+
     structs = get_structs()
     p_ains = get_p_ain(structs)
 
