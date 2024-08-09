@@ -6,10 +6,10 @@
 				"Cfg_InpRawMax": 20.0,
 				"Cfg_PVEUMin": 0.0,
 				"Cfg_PVEUMax": 20.0,
-				"Cfg_HiHiLim": 1.5000000027488779e+38,
-				"Cfg_HiLim": 1.5000000027488779e+38,
-				"Cfg_LoLim": -1.5000000027488779e+38,
-				"Cfg_LoLoLim": -1.5000000027488779e+38,
+				"Cfg_HiHiLim": 1.5000000027488779e38,
+				"Cfg_HiLim": 1.5000000027488779e38,
+				"Cfg_LoLim": -1.5000000027488779e38,
+				"Cfg_LoLoLim": -1.5000000027488779e38,
 				"Cfg_EU": "Cond",
 				"Cfg_Tag": "P_AIn",
 				"Cfg_Label": "AIT-15-11",
@@ -23,10 +23,10 @@
 				"Cfg_InpRawMax": 20.0,
 				"Cfg_PVEUMin": 0.0,
 				"Cfg_PVEUMax": 20.0,
-				"Cfg_HiHiLim": 1.5000000027488779e+38,
-				"Cfg_HiLim": 1.5000000027488779e+38,
-				"Cfg_LoLim": -1.5000000027488779e+38,
-				"Cfg_LoLoLim": -1.5000000027488779e+38,
+				"Cfg_HiHiLim": 1.5000000027488779e38,
+				"Cfg_HiLim": 1.5000000027488779e38,
+				"Cfg_LoLim": -1.5000000027488779e38,
+				"Cfg_LoLoLim": -1.5000000027488779e38,
 				"Cfg_EU": "Cond",
 				"Cfg_Tag": "P_AIn",
 				"Cfg_Label": "AIT-15-11A",
@@ -35,20 +35,39 @@
 			}
 		}
 	},
-	"P_AOut": {
-	},
-	"P_VSD": {
-	},
-	"P_ValveC": {
-	},
-	"P_ValveSO": {
-	},
-	"P_ValveMO": {
-	},
-	"P_PIDE": {
-	},
-	"P_Dose": {
-	},
-	"P_LLS": {
+	"P_AOut": {},
+	"P_VSD": {},
+	"P_ValveC": {},
+	"P_ValveSO": {},
+	"P_ValveMO": {},
+	"P_PIDE": {},
+	"P_Dose": {},
+	"P_LLS": {},
+	"P_Alarm": {
+		"HiHi": {
+			"attributes": {
+				"Cfg_ResetReqd": false
+			}
+		},
+		"Hi": {
+			"attributes": {
+				"Cfg_ResetReqd": false
+			}
+		},
+		"Lo": {
+			"attributes": {
+				"Cfg_ResetReqd": false
+			}
+		},
+		"LoLo": {
+			"attributes": {
+				"Cfg_ResetReqd": false
+			}
+		},
+		"Fail": {
+			"attributes": {
+				"Cfg_ResetReqd": true
+			}
+		}
 	}
 }

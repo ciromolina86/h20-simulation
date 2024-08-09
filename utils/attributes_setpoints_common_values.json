@@ -49,6 +49,16 @@
 			"Cfg_FailGateDly": 0.0
 		}
 	},
+	"P_Alarm": {
+		"attributes": {
+			"Cfg_Exists": true,
+			"Cfg_AckReqd": false,
+			"Cfg_AllowShelve": false,
+			"Cfg_AllowDisable": false,
+			"Cfg_MaxShelfT": 0,
+			"Cfg_AlmMinOnT": 5
+		}
+	}
 	"P_AOut": {
 		"attributes": {}
 	},
