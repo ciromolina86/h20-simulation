@@ -1,0 +1,54 @@
+{
+	"P_AIn": {
+		"AIT_15_11": {
+			"attributes": {
+				"Cfg_InpRawMin": 0.0,
+				"Cfg_InpRawMax": 20.0,
+				"Cfg_PVEUMin": 0.0,
+				"Cfg_PVEUMax": 20.0,
+				"Cfg_HiHiLim": 1.5000000027488779e+38,
+				"Cfg_HiLim": 1.5000000027488779e+38,
+				"Cfg_LoLim": -1.5000000027488779e+38,
+				"Cfg_LoLoLim": -1.5000000027488779e+38,
+				"Cfg_EU": "Cond",
+				"Cfg_Tag": "P_AIn",
+				"Cfg_Label": "AIT-15-11",
+				"Cfg_Desc": "Analog Input",
+				"Cfg_Area": "area01"
+			}
+		},
+		"AIT_15_11A": {
+			"attributes": {
+				"Cfg_InpRawMin": 0.0,
+				"Cfg_InpRawMax": 20.0,
+				"Cfg_PVEUMin": 0.0,
+				"Cfg_PVEUMax": 20.0,
+				"Cfg_HiHiLim": 1.5000000027488779e+38,
+				"Cfg_HiLim": 1.5000000027488779e+38,
+				"Cfg_LoLim": -1.5000000027488779e+38,
+				"Cfg_LoLoLim": -1.5000000027488779e+38,
+				"Cfg_EU": "Cond",
+				"Cfg_Tag": "P_AIn",
+				"Cfg_Label": "AIT-15-11A",
+				"Cfg_Desc": "Analog Input",
+				"Cfg_Area": "area01"
+			}
+		}
+	},
+	"P_AOut": {
+	},
+	"P_VSD": {
+	},
+	"P_ValveC": {
+	},
+	"P_ValveSO": {
+	},
+	"P_ValveMO": {
+	},
+	"P_PIDE": {
+	},
+	"P_Dose": {
+	},
+	"P_LLS": {
+	}
+}
