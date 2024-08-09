@@ -89,7 +89,7 @@ def main():
     clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
 
     instances = get_instances('tag-list-2024-08-08.json', data_type='P_AIn')
-    # attributes = get_attributes('attributes_config.json', data_type='P_AIn')
+    # attributes = get_attributes('attributes_setpoints.json', data_type='P_AIn')
     # read_setpoints(clx, instances[:3], attributes)
     # print(instances)
     # print(len(instances))
@@ -97,7 +97,7 @@ def main():
 
     # export_setpoints('setpoints-2024-08-07.json')
 
-    attributes, values = get_std_cfg_values('p_ain_std_cfg.json')
+    attributes, values = get_std_cfg_values('attributes_setpoints_common_values.json')
     write_setpoints(clx, instances, attributes, values)
 
 
