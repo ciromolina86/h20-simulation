@@ -21,13 +21,13 @@ def get_instances(file_path='tag-list-2024-08-09.json', data_type='P_AIn'):
     return instances
 
 
-def get_attributes(file_path='attributes_setpoints.json', data_type='P_AIn'):
+def get_attributes(file_path='attributes_setpoints.json', data_type='P_AIn', group='all_attributes'):
     # open JSON file and load attributes into a dictionary
     with open(file_path, 'r') as file:
         data = json.load(file)
 
     # filter attributes by data type
-    return data[data_type]['attributes']
+    return data[data_type][group]
 
 
 def get_common_values(file_path='attributes_setpoints_common_values.json', data_type='P_AIn'):
@@ -85,15 +85,19 @@ def export_setpoints(file_path):
     df.to_excel(f"setpoints-{time.strftime('%Y-%m-%d')}.xlsx", index=True, engine='openpyxl')
 
 
-def filter_setpoints(file_path, filter_file_path):
-    # todo
+def filter_setpoints(file_path, filter):
     with open(file_path, 'r') as file:
         data = json.load(file)
 
-    attributes = list(data[data_type]['attributes'].keys())
-    values = [data[data_type]['attributes'][attribute] for attribute in attributes]
+    result = {}
+    for key, value in data.items():
+        # Create a filtered dictionary for each key
+        filtered_value = {k: v for k, v in value.items() if k in filter}
+        result[key] = filtered_value
 
-    return attributes, values
+    # Writing instance attributes in JSON format
+    with open(f"{file_path}_filtered.json", 'w') as file:
+        json.dump(result, file, indent=4)
 
 
 def p_ain_helper(clx):
@@ -109,14 +113,14 @@ def p_ain_helper(clx):
         attributes_alarm = [f"{alarm}.{attribute}" for alarm in ['HiHi', 'Hi', 'Lo', 'LoLo', 'Fail']
                             for attribute in attributes_alarm]
         attributes = attributes + attributes_alarm
-        values = values + values_alarm*5
+        values = values + values_alarm * 5
 
         # write all the common setpoint attributes to all the P_AIn instances
         write_setpoints(clx, instances, attributes, values)
         # if it fails before finishing, use the instance where it failed as a starting point to continue
         # write_setpoints(clx, instances[instances.index('FIT_40_14'):], attributes, values)
 
-    if True:  # if you want reading functions to run manually change to True, if not change to False
+    if False:  # if you want reading functions to run manually change to True, if not change to False
         # get a list of all the setpoint attributes for P_Ain instances
         attributes = get_attributes('attributes_setpoints.json', data_type='P_AIn')
 
@@ -133,6 +137,13 @@ def p_ain_helper(clx):
         # if you want to export json as an excel file uncomment this line
         # export_setpoints('setpoints-2024-08-07.json')
 
+    if True:  # if you want attributes filtering functions to run manually change to True, if not change to False
+        custom_attributes = get_attributes('attributes_setpoints.json', data_type='P_AIn', group='custom_attributes')
+        custom_attributes = custom_attributes + \
+                            [f"{alarm}.{attribute}" for alarm in ['HiHi', 'Hi', 'Lo', 'LoLo', 'Fail']
+                             for attribute in get_attributes('attributes_setpoints.json', data_type='P_Alarm',
+                                                             group='custom_attributes')]
+        filter_setpoints('setpoints-3-2024-08-09.json', custom_attributes)
 
 
 def main():
