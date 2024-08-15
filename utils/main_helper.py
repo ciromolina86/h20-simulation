@@ -146,10 +146,35 @@ def p_ain_helper(clx):
         filter_setpoints('setpoints-3-2024-08-09.json', custom_attributes)
 
 
+def get_data_types(file_path='tag-list-2024-08-09.json'):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+
+    data_types = []
+    # for dt in [dt for dt in data
+    #            if not any(char in data[dt]['data_type_name']
+    #                       for char in ['BOOL', 'REAL', 'WORD', 'INT', 'FBD_', ':', 'TIMER', 'udtDateTime'])]:
+    for dt in [dt for dt in data
+               if any(char in data[dt]['data_type_name'] for char in ['P_']) and
+                  not any(char in data[dt]['data_type_name']
+                          for char in ['BOOL', 'REAL', 'WORD', 'INT', 'FBD_', ':', 'TIMER', 'udtDateTime'])]:
+        data_types.append(data[dt]['data_type_name'])
+    data_types = list(set(data_types))
+
+    print(data_types)
+    print(f"No of data types: {len(data_types)}")
+    for data_type in data_types:
+        print(f"No of {data_type} instances: "
+              f"{len(get_instances(file_path='tag-list-2024-08-09.json', data_type=data_type))}")
+
+    return data_types
+
+
 def main():
     # Create PLC object
     clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
-    p_ain_helper(clx)
+    get_data_types(file_path='tag-list-2024-08-09.json')
+    # p_ain_helper(clx)
 
 
 if __name__ == '__main__':
