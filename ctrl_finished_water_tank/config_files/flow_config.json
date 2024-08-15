@@ -1,0 +1,147 @@
+{
+  "name": "Program:Ctrl_Finished_Water_Tank_Pumps.PI_Discharge_Flow",
+  "description": "Discharge Flow",
+  "unit": "gpm",
+  "segments": {
+    "1_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 300,
+      "noise": 0.2
+    },
+    "2_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 300,
+      "amplitude": 300,
+      "noise": 0.2
+    },
+    "3_ramp_up": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 600,
+      "amplitude": 150,
+      "noise": 0.2
+    },
+    "4_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 750,
+      "noise": 0.2
+    },
+    "5_ramp_down": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 750,
+      "amplitude": -250,
+      "noise": 0.2
+    },
+    "6_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "7_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "8_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "9_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "10_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "11_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "12_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "13_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "14_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "15_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "16_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "17_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "18_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "19_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    },
+    "20_steady_state": {
+      "duration": 30,
+      "sampling_rate": 1,
+      "offset": 0,
+      "amplitude": 500,
+      "noise": 0.2
+    }
+  }
+}
