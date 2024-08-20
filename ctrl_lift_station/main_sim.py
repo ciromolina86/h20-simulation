@@ -19,7 +19,7 @@ def main():
     print(clx.get_plc_info())
 
     config_files = ['Level_config.json',
-                    'Inlet_Pressure_config.json']
+                    'Discharge_Flow_config.json']
 
     # init data with first tag values
     file_path = os.path.join('config_files', config_files[0])
@@ -35,9 +35,11 @@ def main():
 
     # print dataset info
     print(merged_df.shape)
-    # merged_df[["Program:Ctrl_Sanitary_Lift_Station.PI_Lift_Station_Level",
-    #            "Program:Ctrl_Sanitary_Lift_Station.PI_Inlet_Pressure"]].plot()
-    # plt.show()
+    merged_df[[
+        "Program:Ctrl_Sanitary_Lift_Station.PI_Lift_Station_Level",
+        # "Program:Ctrl_Sanitary_Lift_Station.PI_Discharge_Flow"
+        ]].plot()
+    plt.show()
 
     # Write Process Variable to PLC every 1 second
     rows, cols = merged_df.shape
