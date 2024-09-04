@@ -1,0 +1,7 @@
+#AssetHeader,Asset Name,Description,Asset Type Name,Parent Asset Name,Asset Type Template,
+"Asset","VSD_Template","","P_VSD","","Default_Template_P_VSD",
+"Asset","AIn_Template","","P_AIn","","Default_Template_P_AIn",
+"Asset","ValveC_Template","","P_ValveC","","Default_Template_P_ValveC",
+"Asset","ValveMO_Template","","P_ValveMO","","Default_Template_P_ValveMO",
+"Asset","ValveSO_Template","","P_ValveSO","","Default_Template_P_ValveSO",
+"Asset","Motor_Template","","P_Motor","","Default_Template_P_Motor",

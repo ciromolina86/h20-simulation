@@ -3,6 +3,8 @@ from pyautogui import Point
 import time
 import os, sys
 
+from utils.main_helper import get_instances
+
 
 def open_terminal():
     pyautogui.PAUSE = 2.0
@@ -47,24 +49,25 @@ def main():
 
 def steps_sequence(instance):
     pyautogui.PAUSE = 1.5
-    # step 1
-    pyautogui.click(Point(x=2265, y=121))  # select window
-    # step 2
-    pyautogui.hotkey('ctrl', 'n')  # select new file
-    # pyautogui.click(Point(x=2157, y=177))  # select new file
-    # pyautogui.click(Point(x=2091, y=226))  # select Symbol field
-    # step 3
+    # step 1 # select window
+    pyautogui.click(Point(x=2395, y=194))
+    # step 2 # select new file
+    pyautogui.hotkey('ctrl', 'n')
+    # step 3 # type the Symbol name
     pyautogui.typewrite('EquipmentName')
-    # step 4
+    # step 4 # select Substitution and type instance name
     pyautogui.hotkey('tab')
     pyautogui.typewrite(instance)
-    # step 5
+    # step 5 # save file
     pyautogui.hotkey('ctrl', 's')
     pyautogui.typewrite(instance)
     pyautogui.press('enter')
 
 
 if __name__ == '__main__':
+    instances = get_instances(file_path='tag-list-2024-08-09.json', data_type='P_ValveSO')
+    # print(instances)
+
     instances = ['LIT_15_11', 'FIT_30_04', 'PIT_15_12', 'FIT_15_12', 'AIT_15_11A', 'AIT_15_11B_1', 'AIT_15_11B_2',
                  'AIT_15_11C', 'AIT_30_01A', 'AIT_30_01B', 'AIT_30_01C', 'AIT_30_01D', 'FIT_30_03', 'FIT_30_01',
                  'FIT_30_02', 'LIT_30_01', 'PIT_30_01', 'AIT_30_01E', 'AIT_30_01F', 'AIT_30_01G_1', 'AIT_30_01H',
@@ -90,10 +93,25 @@ if __name__ == '__main__':
                  'AIT_70_11A_2', 'AIT_70_11B', 'AIT_70_11C', 'AIT_70_11D', 'LIT_80_11', 'WIT_80_51', 'WIT_80_52',
                  'LIT_80_21', 'LIT_80_31', 'LIT_80_61', 'WIT_80_71', 'WIT_80_72', 'WIT_80_41', 'WIT_80_42', 'WIT_80_81',
                  'WIT_80_82', 'FIT_90_11']
+    instances = ['PMP_15_11', 'VFD_15_12', 'PMP_15_13', 'PMP_15_14', 'PCL_30_01', 'PCL_30_02', 'PCL_30_03', 'PCL_30_31',
+                 'PCL_30_32', 'PCL_30_04', 'PMP_15_12', 'PCL_30_43', 'PCL_30_44', 'PCL_30_45', 'PCL_30_33', 'PCL_40_42',
+                 'PCL_40_43', 'PVD_40_11A', 'PCL_40_12', 'PCL_40_21', 'PCL_40_31', 'PCL_40_32', 'PCL_40_51',
+                 'PCL_40_52', 'PMP_70_41', 'PMP_70_42']
+    instances = ['CMP_30_61', 'CMP_30_62', 'AD_30_63', 'AD_30_64', 'PCL_30_51', 'PCL_40_41']
+    instances = ['VBF_70_24', 'VBF_70_25', 'VBF_70_27', 'VBF_70_28', 'VBF_70_31', 'FCV_30_03', 'VBF_40_27', 'VBF_40_24']
+    instances = ['VBF_70_12', 'VBF_70_37', 'VBF_40_46', 'VBF_40_47', 'VBF_40_07', 'VBF_40_16', 'VBF_40_56', 'VBF_50_15',
+                 'VBF_50_16', 'VBF_40_17', 'VBF_70_55', 'VBM_30_53', 'VBF_40_11', 'VBF_40_12', 'VBF_40_13',
+                 'VBF_40_14', 'VBF_40_17A', 'VBF_40_15', 'VBF_40_20', 'VBF_40_22', 'VBF_40_21', 'VBF_40_24',
+                 'VBF_40_22A', 'VBF_40_20A', 'VBF_40_31', 'VBF_40_32', 'VBF_40_33', 'VBF_40_34', 'VBM_40_41',
+                 'VBL_80_51', 'VBL_80_52', 'VBL_80_71', 'VBL_80_72', 'VBL_80_41', 'VBL_80_42', 'VBL_80_81', 'VBL_80_82']
+    instances = ['VBF_30_07', 'VBF_30_08', 'VLV_30_61', 'VLV_30_65', 'VLV_30_62', 'VLV_30_63', 'VBF_30_43', 'VBF_30_44',
+                 'VBF_30_45', 'VBF_30_46', 'VBF_30_47', 'VBF_30_48', 'VBF_30_49', 'VBF_30_50', 'VBF_30_51', 'VBF_30_41',
+                 'VBF_30_42']
+
+    # show_mouse_pos()
 
     for instance in instances:
         print(instance)
         steps_sequence(instance)
 
-    # show_mouse_pos()
     # open_terminal()

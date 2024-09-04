@@ -1,0 +1,5 @@
+#TagSourceHeader,Parent Asset Name,Property Name,RealtimeServerAlias,RealtimeDataSourceName (iFix tag Id),HistoricalServerAlias,HistoricalDataSourceName,
+"TagSource","Test_P_Motor","VAL_STS","FIX","ns=2;s=13$Test_P_Motor>VAL_STS.CV",,,
+"TagSource","Test_P_ValveC","VAL_POS","FIX","ns=2;s=13$Test_P_ValveC>VAL_POS.CV",,,
+"TagSource","Test_P_ValveMO","VAL_FDBK","FIX","ns=2;s=13$Test_P_ValveMO>VAL_FDBK.CV",,,
+"TagSource","Test_P_ValveSO","VAL_STS","FIX","ns=2;s=13$Test_P_ValveSO>VAL_STS.CV",,,

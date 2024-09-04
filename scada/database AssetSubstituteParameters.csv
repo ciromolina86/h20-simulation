@@ -1,0 +1,5 @@
+#AssetSubstituteParameters,ParameterName,AssetName,AssetTemplate,AssetType,ParamterValue,
+"AssetSubstituteParameters","VlvName","ValveC_Template","P_ValveC","Default_Template_P_ValveC","ValveC_Template",
+"AssetSubstituteParameters","VlvName","ValveMO_Template","P_ValveMO","Default_Template_P_ValveMO","ValveMO_Template",
+"AssetSubstituteParameters","VlvName","ValveSO_Template","P_ValveSO","Default_Template_P_ValveSO","ValveSO_Template",
+"AssetSubstituteParameters","PmpName","Motor_Template","P_Motor","Default_Template_P_Motor","Motor_Template",
