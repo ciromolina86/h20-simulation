@@ -32,8 +32,8 @@ def get_data_type(tags_df, data_type='P_AIn'):
     if data_type == 'P_AIn':
         tags_df_filtered = tags_df.where(tags_df['data_type_name'] == 'P_AIn')
         return tags_df_filtered.dropna(how='all')  # ['tag_name', 'data_type_name', 'data_type']
-    if data_type == 'P_Motor':
-        tags_df_filtered = tags_df.where(tags_df['data_type_name'] == 'P_Motor')
+    if data_type == 'P_VSD':
+        tags_df_filtered = tags_df.where(tags_df['data_type_name'] == 'P_VSD')
         return tags_df_filtered.dropna(how='all')  # ['tag_name', 'data_type_name', 'data_type']
 
 
@@ -61,38 +61,53 @@ def get_tag_list(clx):
 
     # Writing tag list in JSON format
     with open(f"tag-list-{time.strftime('%Y-%m-%d')}.json", 'w') as file:
-        json.dump(data, file)
+        json.dump(data, file, indent=4)
 
-    return json.dumps(data)
+    return json.dumps(data, indent=4)
 
 
 def get_plc_info(clx):
     # Read PLC info
     data = clx.get_plc_info()
+    data['status'] = data['status'].decode('utf-8')
 
     # Writing PLC info in JSON format
     with open(f"plc-info-{time.strftime('%Y-%m-%d')}.json", 'w') as file:
-        json.dump(data, file)
+        json.dump(data, file, indent=4)
 
-    return json.dumps(data)
+    return json.dumps(data, indent=4)
+
+
+def testing_writing_setpoint(plc):
+    plc.write_multiple_tags(['LIT_15_11.Cfg_EU', 'LIT_15_11.Cfg_Tag', 'LIT_15_11.Cfg_Label', 'LIT_15_11.Cfg_Desc'],
+                            ['feet', 'LIT_15_11', 'LIT-15-11', 'Sanitary Lift Station Level'])
+
+
+def testing_reading_setpoints(plc):
+    return plc.read_multiple_tags(['LIT_15_11.Cfg_EU', 'LIT_15_11.Cfg_Tag', 'LIT_15_11.Cfg_Label', 'LIT_15_11.Cfg_Desc'])
 
 
 def main():
     # Create PLC object
     clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
+    # print(testing_reading_setpoints(clx))
+    # testing_writing_setpoint(clx)
+    # print(testing_reading_setpoints(clx))
+    # return None
 
     # Read data from PLC and write to json files
-    get_plc_info(clx)
-    get_tag_list(clx)
+    # get_plc_info(clx)
+    # get_tag_list(clx)
 
     # Parse tag list read from PLC and filter data type of interest
-    tag_list_atomic = get_tag_type(file_path='tag-list-2024-08-07.json', tag_type='atomic')
+    # tag_list_atomic = get_tag_type(file_path='tag-list-2024-08-07.json', tag_type='atomic')
 
     # Parse tag list read from PLC and filter data type of interest
-    tag_list_struct = get_tag_type(file_path='tag-list-2024-08-07.json', tag_type='struct')
-    tag_list_p_ain = get_data_type(tags_df=tag_list_struct, data_type='P_AIn')
-    tag_list_p_ain_with_attributes = insert_attributes(tag_list_p_ain)
-    tag_list_p_ain_with_attributes.to_excel('tag_list_p_ain_with_attributes.xlsx')
+    # tag_list_struct = get_tag_type(file_path='tag-list-2024-08-07.json', tag_type='struct')
+    # print(tag_list_struct['data_type_name'].unique())
+    # tag_list_p_ain = get_data_type(tags_df=tag_list_struct, data_type='P_AIn')
+    # tag_list_p_ain_with_attributes = insert_attributes(tag_list_p_ain)
+    # tag_list_p_ain_with_attributes.to_excel('tag_list_p_ain_with_attributes.xlsx')
 
 
 if __name__ == '__main__':

@@ -50,7 +50,7 @@ def main():
 def steps_sequence(instance):
     pyautogui.PAUSE = 1.5
     # step 1 # select window
-    pyautogui.click(Point(x=2395, y=194))
+    pyautogui.click(Point(x=336, y=42))
     # step 2 # select new file
     pyautogui.hotkey('ctrl', 'n')
     # step 3 # type the Symbol name
@@ -65,7 +65,7 @@ def steps_sequence(instance):
 
 
 if __name__ == '__main__':
-    instances = get_instances(file_path='tag-list-2024-08-09.json', data_type='P_ValveSO')
+    # instances = get_instances(file_path='tag-list-2024-08-09.json', data_type='P_ValveSO')
     # print(instances)
 
     instances = ['LIT_15_11', 'FIT_30_04', 'PIT_15_12', 'FIT_15_12', 'AIT_15_11A', 'AIT_15_11B_1', 'AIT_15_11B_2',
@@ -107,6 +107,7 @@ if __name__ == '__main__':
     instances = ['VBF_30_07', 'VBF_30_08', 'VLV_30_61', 'VLV_30_65', 'VLV_30_62', 'VLV_30_63', 'VBF_30_43', 'VBF_30_44',
                  'VBF_30_45', 'VBF_30_46', 'VBF_30_47', 'VBF_30_48', 'VBF_30_49', 'VBF_30_50', 'VBF_30_51', 'VBF_30_41',
                  'VBF_30_42']
+    # instances = ['TEST_1', 'TEST_2', 'TEST_3']
 
     # show_mouse_pos()
 
