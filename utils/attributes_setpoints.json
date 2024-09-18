@@ -1,6 +1,6 @@
 {
 	"P_AIn": {
-		"attributes": [
+		"all_attributes": [
 			"Cfg_NoSubstPV",
 			"Cfg_HasChanObj",
 			"Cfg_HasMoreObj",
@@ -62,10 +62,75 @@
 			"Cfg_Label",
 			"Cfg_Desc",
 			"Cfg_Area"
+		],
+		"common_attributes": [
+			"Cfg_NoSubstPV",
+			"Cfg_HasChanObj",
+			"Cfg_HasMoreObj",
+			"Cfg_UseChanSrcQ",
+			"Cfg_PVDecPlcs",
+			"Cfg_HasHiHiAlm",
+			"Cfg_HasHiAlm",
+			"Cfg_HasLoAlm",
+			"Cfg_HasLoLoAlm",
+			"Cfg_HasFailAlm",
+			"Cfg_HiHiResetReqd",
+			"Cfg_HiResetReqd",
+			"Cfg_LoResetReqd",
+			"Cfg_LoLoResetReqd",
+			"Cfg_FailResetReqd",
+			"Cfg_HiHiAckReqd",
+			"Cfg_HiAckReqd",
+			"Cfg_LoAckReqd",
+			"Cfg_LoLoAckReqd",
+			"Cfg_FailAckReqd",
+			"Cfg_HiHiSeverity",
+			"Cfg_HiSeverity",
+			"Cfg_LoSeverity",
+			"Cfg_LoLoSeverity",
+			"Cfg_FailSeverity",
+			"Cfg_FiltTC",
+			"Cfg_HiHiDB",
+			"Cfg_HiHiOnDly",
+			"Cfg_HiHiOffDly",
+			"Cfg_HiHiGateDly",
+			"Cfg_HiDB",
+			"Cfg_HiOnDly",
+			"Cfg_HiOffDly",
+			"Cfg_HiGateDly",
+			"Cfg_LoDB",
+			"Cfg_LoOnDly",
+			"Cfg_LoOffDly",
+			"Cfg_LoGateDly",
+			"Cfg_LoLoDB",
+			"Cfg_LoLoOnDly",
+			"Cfg_LoLoOffDly",
+			"Cfg_LoLoGateDly",
+			"Cfg_FailHiLim",
+			"Cfg_FailLoLim",
+			"Cfg_FailDB",
+			"Cfg_FailOnDly",
+			"Cfg_FailOffDly",
+			"Cfg_FailGateDly"			
+		],
+		"custom_attributes": [
+			"Cfg_InpRawMin",
+			"Cfg_InpRawMax",
+			"Cfg_PVEUMin",
+			"Cfg_PVEUMax",
+			"Cfg_HiHiLim",
+			"Cfg_HiLim",
+			"Cfg_LoLim",
+			"Cfg_LoLoLim",
+			"Cfg_EU",
+			"Cfg_Tag",
+			"Cfg_Label",
+			"Cfg_Desc",
+			"Cfg_Area"
 		]
 	},
 	"P_Alarm": {
-		"attributes": [
+		"all_attributes": [
 			"Cfg_Exists",
 			"Cfg_ResetReqd",
 			"Cfg_AckReqd",
@@ -74,13 +139,26 @@
 			"Cfg_Severity",
 			"Cfg_MaxShelfT",
 			"Cfg_AlmMinOnT"
+		],
+		"common_attributes": [
+			"Cfg_Exists",
+			"Cfg_AckReqd",
+			"Cfg_AllowShelve",
+			"Cfg_AllowDisable",
+			"Cfg_Severity",
+			"Cfg_MaxShelfT",
+			"Cfg_AlmMinOnT"
+		],
+		"custom_attributes": [
+			"Cfg_ResetReqd"
+			
 		]
 	},
 	"P_AOut": {
-		"attributes": []
+		"all_attributes": []
 	},
 	"P_VSD": {
-		"attributes": [
+		"all_attributes": [
 			"Cfg_HasReverse",
 			"Cfg_HasJog",
 			"Cfg_AllowLocal",
@@ -174,21 +252,21 @@
 		]
 	},
 	"P_ValveC": {
-		"attributes": []
+		"all_attributes": []
 	},
 	"P_ValveSO": {
-		"attributes": []
+		"all_attributes": []
 	},
 	"P_ValveMO": {
-		"attributes": []
+		"all_attributes": []
 	},
 	"P_PIDE": {
-		"attributes": []
+		"all_attributes": []
 	},
 	"P_Dose": {
-		"attributes": []
+		"all_attributes": []
 	},
 	"P_LLS": {
-		"attributes": []
+		"all_attributes": []
 	}
 }
