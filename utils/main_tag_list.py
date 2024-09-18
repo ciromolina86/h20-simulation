@@ -97,7 +97,7 @@ def main():
 
     # Read data from PLC and write to json files
     # get_plc_info(clx)
-    # get_tag_list(clx)
+    get_tag_list(clx)
 
     # Parse tag list read from PLC and filter data type of interest
     # tag_list_atomic = get_tag_type(file_path='tag-list-2024-08-07.json', tag_type='atomic')
