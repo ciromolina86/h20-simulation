@@ -16,7 +16,7 @@ def write_pv_tags(plc, tags, values):
 def main():
     # Create PLC object and print PLC info
     clx = comm_handler.CLX_Manager(ip_address='192.168.60.80')
-    print(clx.get_plc_info())
+    # print(clx.get_plc_info())
 
     config_files = ['Level_config.json',
                     'Discharge_Flow_config.json']
@@ -35,11 +35,11 @@ def main():
 
     # print dataset info
     print(merged_df.shape)
-    merged_df[[
-        "Program:Ctrl_Sanitary_Lift_Station.PI_Lift_Station_Level",
-        # "Program:Ctrl_Sanitary_Lift_Station.PI_Discharge_Flow"
-        ]].plot()
-    plt.show()
+    # merged_df[[
+    #     "Program:Ctrl_Sanitary_Lift_Station.PI_Lift_Station_Level",
+    #     "Program:Ctrl_Sanitary_Lift_Station.PI_Discharge_Flow"
+    #     ]].plot()
+    # plt.show()
 
     # Write Process Variable to PLC every 1 second
     rows, cols = merged_df.shape
