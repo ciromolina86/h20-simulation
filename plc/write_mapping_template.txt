@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////
+// VFD_15_11 - Description
+////////////////////////////////////////////////////////////////
+// Sending Drive Fault feedback to SCADA
+SCADA_VFD_15_11.FLT := PMP_15_11.Alm_DriveFault;
+
+// Sending Out of Comms feedback to SCADA
+IF PMP_15_11.Sts_IOFault THEN SCADA_VFD_15_11.OOC := 0; ELSE SCADA_VFD_15_11.OOC := 1; END_IF;
+ 
+// Sending Call to Run feedback to SCADA
+SCADA_VFD_15_11.CALL := PMP_15_11.Out_Run;
+
+// Sending Remote Status feedback to SCADA
+IF PMP_15_11.Sts_Hand THEN SCADA_VFD_15_11.REMOTE := 0; ELSE SCADA_VFD_15_11.REMOTE := 1; END_IF;
+ 
+// Sending Runtime Hrs to SCADA
+SCADA_VFD_15_11.RT := PMP_15_11_RunTime.Val_TotRunHrs;
+ 
+// Sending Total Starts to SCADA
+SCADA_VFD_15_11.TSTRTS := PMP_15_11_RunTime.Val_Starts;
+
+// Sending Amps to SCADA
+SCADA_VFD_15_11.AMPS := G120X_VFD_15_11.Actual_Current;
+ 
+// Sending Torque to SCADA
+SCADA_VFD_15_11.TQ := G120X_VFD_15_11.Actual_Torque;
+ 
+// Sending Rotation Priority to SCADA Pump1 = Interface[0]
+SCADA_VFD_15_11.SQP := .Val_Rank;  // to-do: intentionally left blank for error
+ 
+// Sending Speed Feedback to SCADA
+SCADA_VFD_15_11.SPD := PMP_15_11.Val_SpeedFdbk;
+ 
+// Write back Auto Feedback for SCADA in the same Cmd bit 
+IF PMP_15_11.Sts_Prog THEN SCADA_VFD_15_11.AUTO :=1; ELSE SCADA_VFD_15_11.AUTO := 0; END_IF;
+
+// Sending Running feedback to SCADA
+SCADA_VFD_15_11.RUNNING := PMP_15_11.Sts_RunningFwd;
+ 
+// Sending Min Speed SP to SCADA
+SCADA_VFD_15_11.MIN_SPD := PMP_15_11.Cfg_MinSpdRef;
+
+// Reset SCADA Fault Cmd
+IF SCADA_VFD_15_11.FLT_RST_CMD THEN SCADA_VFD_15_11.FLT_RST_CMD := 0; END_IF;
+
+// Reset P_VSD Fault Input
+IF PMP_15_11.Inp_Reset THEN PMP_15_11.Inp_Reset := 0; END_IF;
+
+// Reset SCADA Runtime Reset Cmd
+IF SCADA_VFD_15_11.RT_RESET_CMD THEN SCADA_VFD_15_11.RT_RESET_CMD := 0; END_IF;
+
+// Reset SCADA Start Cmd
+IF SCADA_VFD_15_11.STRT_CMD AND not PMP_15_11.Out_Run THEN SCADA_VFD_15_11.STRT_CMD := 0; END_IF;
