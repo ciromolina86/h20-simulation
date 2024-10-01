@@ -1,0 +1,28 @@
+
+
+// VFD_15_11 - Description
+// Start-Stop will update P_VSD Block after One Shot from SCADA Start-Stop Commands
+OSRI35.InputBit := SCADA_VFD_15_11.STRT_CMD; OSRI(OSRI35);
+IF OSRI35.OutputBit THEN PMP_15_11.Scada_Start_Cmd := 1; END_IF;
+OSFI35.InputBit := SCADA_VFD_15_11.STRT_CMD; OSFI(OSRI35);
+IF  OSFI35.OutputBit THEN PMP_15_11.Scada_Stop_Cmd := 1; END_IF;
+
+// SCADA Cmd to Reset Alarms
+OSRI38.InputBit := SCADA_VFD_15_11.FLT_RST_CMD; OSRI(OSRI38);
+IF OSRI38.OutputBit THEN PMP_15_11.Inp_Reset := 1; END_IF;
+
+// SCADA Cmd to Reset Runtime
+OSRI37.InputBit := SCADA_VFD_15_11.RT_RESET_CMD; OSRI(OSRI37);
+IF OSRI37.OutputBit THEN PMP_15_11_RunTime.PCmd_ClearTotHrs := 1; END_IF;
+
+// Speed Reference will update after checking for different value input from SCADA without affecting HMI Input
+IF SCADA_VFD_15_11.SPD_CMD <> Speed_Cmd_Storage THEN PMP_15_11.Scada_Speed_Cmd := SCADA_VFD_15_11.SPD_CMD; Speed_Cmd_Storage := PMP_15_11.Scada_Speed_Cmd; END_IF;  
+
+// Oper-Prog will update P_VSD Block after One Shot from SCADA Auto-Manual Commands
+OSRI36.InputBit := SCADA_VFD_15_11.AUTO; OSRI(OSRI36);
+IF OSRI36.OutputBit THEN PMP_15_11.Scada_Auto_Cmd := 1; END_IF;
+OSFI36.InputBit := SCADA_VFD_15_11.AUTO; OSFI(OSFI36);
+IF  OSFI36.OutputBit THEN PMP_15_11.Scada_Man_Cmd := 1; END_IF;
+
+// Configure Min Speed SP
+PMP_15_11.Cfg_MinSpdRef := SCADA_VFD_15_11.MIN_SPD;
